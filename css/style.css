@@ -67,6 +67,18 @@ header .navegacao-primaria li a:hover::after {
 
 
 /* Download CV Section */
+.download-button {
+    background-color: #000;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
 
 .section-div {
     animation: initialize .7s forwards;
