@@ -131,3 +131,18 @@ buttomGeral.forEach((item)=>{
         }
     })
 })
+  const pdfUrl = "./img/Curriculo_Gabriel.pdf";
+
+  const downloadButton = document.getElementById("downloadButton");
+
+  downloadButton.addEventListener("click", () => {
+    const tempLink = document.createElement("a");
+    tempLink.href = pdfUrl;
+    tempLink.target = "_blank"; // Abre o link em uma nova guia
+    tempLink.download = "Curriculo_Gabriel.pdf"; // Nome do arquivo de download
+
+    // Simula o clique no link temporário
+    document.body.appendChild(tempLink);
+    tempLink.click();
+    document.body.removeChild(tempLink);
+  });
