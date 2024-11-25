@@ -5,18 +5,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     display: flex;
-    overflow: auto;
-}
-.main-content {
-    flex-grow: 1;
-}
-
-/* Estilos do cursor de texto piscando */
-.writing::after {
-    content: '|';
-    margin-left: 5px;
-    opacity: 1;
-    animation: blink .5s infinite;
+    overflow-x: hidden;
 }
 
 /* Container para layout flexível */
@@ -35,6 +24,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: sticky;
+    top: 0;
 }
 
 /* Seção do perfil na sidebar */
@@ -71,7 +62,7 @@ body {
 
 /* Conteúdo principal */
 .main-content {
-    flex: 1;
+    flex-grow: 1;
     padding: 2rem;
     background-color: #f4f4f4;
 }
@@ -108,32 +99,6 @@ body {
 
 .content-section strong {
     font-weight: bold;
-}
-
-/* Estilos da seção de experiência */
-.experience {
-    margin-top: 1rem;
-}
-
-.experience h3 {
-    color: #333;
-    margin-bottom: 1rem;
-}
-
-.experience h4 {
-    color: #555;
-    margin-bottom: 0.5rem;
-    font-size: 1.2rem;
-}
-
-.experience p {
-    font-size: 1rem;
-    line-height: 1.5;
-    margin: 0.5rem 0;
-}
-
-.experience p strong {
-    color: #333;
 }
 
 /* Estilos de tabelas */
@@ -188,12 +153,22 @@ footer {
     width: 100%;
 }
 
-/* Animação de cursor piscando */
-@keyframes blink {
-    0% { opacity: 1; }
-    50% { opacity: 0; }
-    100% { opacity: 1; }
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Altera o layout para coluna em telas menores */
+    }
+
+    .sidebar {
+        width: 100%; /* Barra lateral ocupa toda a largura em telas pequenas */
+        position: static;
+    }
+
+    .main-content {
+        padding: 1rem; /* Ajuste no padding em telas pequenas */
+    }
 }
+
 @media (max-width: 480px) {
     .profile-img {
         width: 80px;
@@ -201,18 +176,18 @@ footer {
     }
 
     .nav-menu ul li a {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 
     .content-section h2 {
-        font-size: 1.25rem;
+        font-size: 1.2rem;
     }
 
     .content-section p {
-        font-size: 0.85rem;
+        font-size: 0.9rem;
     }
 
     table, th, td {
-        font-size: 0.85rem;
+        font-size: 0.9rem;
     }
 }
