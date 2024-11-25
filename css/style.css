@@ -8,7 +8,6 @@ body {
     overflow-x: hidden;
 }
 
-/* Container para layout flexível */
 .container {
     display: flex;
     width: 100%;
