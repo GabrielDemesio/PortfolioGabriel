@@ -30,6 +30,13 @@ document.addEventListener('DOMContentLoaded', () => {
             description: "Sistema de console que simula operações bancárias como saques e depósitos, focado em aplicar conceitos de Orientação a Objetos em Java.",
             tags: ["Java", "POO", "MySQL"],
             github_link: "https://github.com/GabrielDemesio/ProjectBankApp"
+        },
+        {
+            title: "Aplicação API em GOLANG FullCycle",
+            description: "Sistema de api em golang de criação de produtos e usuários com swagger.",
+            tags: ["Golang", "gorm", "Swagger"],
+            github_link: "https://github.com/GabrielDemesio/ProjectApifullcycle\n"
+
         }
     ];
 
