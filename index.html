@@ -1,152 +1,179 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio</title>
+    <title>Portfólio | Gabriel Demesio</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container">
-        <!-- Menu Lateral -->
-        <aside class="sidebar">
-            <div class="profile-section">
-                <img src="img/gabrielnewfoto.jpeg" alt="Minha Foto" class="profile-img">
-                <h2>Gabriel Demesio</h2>
+<div class="container">
+    <aside class="sidebar">
+        <div class="profile-section">
+            <img src="img/gabrielnewfoto.jpeg" alt="Foto de Gabriel Demesio" class="profile-img">
+            <h2>Gabriel Demesio</h2>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#home" data-section="home">Início</a></li>
+                <li><a href="#about" data-section="about">Sobre & Experiência</a></li>
+                <li><a href="#skills" data-section="skills">Competências</a></li>
+                <li><a href="#projects" data-section="projects">Projetos</a></li>
+                <li><a href="#contact" data-section="contact">Contato</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+
+        <section id="home" class="content-section">
+            <h1 class="main-heading">Desenvolvedor de Software</h1>
+            <h2 class="sub-heading writing">Java | Spring Boot | Angular | Go</h2>
+            <p>Bem-vindo ao meu portfólio. Navegue pelas seções para conhecer mais sobre minhas competências, projetos e experiência profissional.</p>
+        </section>
+
+        <section id="about" class="content-section">
+            <h2>Sobre Mim</h2>
+            <p>
+                Desenvolvedor de software com foco em Java e Angular, apaixonado por criar soluções eficientes e escaláveis. Busco aplicar minha experiência em sustentação e desenvolvimento para contribuir em um ambiente de equipe dinâmico e inovador.
+            </p>
+            <p>
+                Possuo forte conhecimento em monitoramento de sistemas, gestão de incidentes e otimização de performance, com interesse contínuo em expandir minhas habilidades no desenvolvimento Full-stack.
+            </p>
+
+            <h3>Experiência Profissional</h3>
+            <div class="experience">
+                <h4>Engenheiro de Sustentação e Desenvolvimento JR</h4>
+                <p><strong>CD2 Retail Tech | São Paulo, SP</strong> | Junho 2024 – Presente</p>
+                <p>Atuo na sustentação e monitoramento das aplicações do grupo Assaí Atacadista, garantindo a performance de soluções desenvolvidas em Java e Angular. Utilizo Docker, Kubernetes e AWS para otimizar a infraestrutura das aplicações.</p>
+
+                <h4>Engenheiro de Suporte e Desenvolvimento JR</h4>
+                <p><strong>HQBEDS | São Paulo, SP</strong> | Abril 2024 – Maio 2024</p>
+                <p>Forneci suporte técnico e desenvolvi soluções para um software de gestão hoteleira, resolvendo dúvidas, personalizando o sistema e diagnosticando problemas para garantir a continuidade das operações dos clientes.</p>
+
+                <h4>Analista de TI</h4>
+                <p><strong>Escudo Real | Praia Grande, SP</strong> | Dezembro 2022 - Janeiro 2024</p>
+                <p>Fui responsável pela manutenção de hardware e redes, realizando diagnósticos e implementando melhorias para otimizar a infraestrutura de tecnologia da empresa.</p>
             </div>
-            <nav class="nav-menu">
-                <ul>
-                    <li><a href="#home" data-section="home">Home</a></li>
-                    <li><a href="#projects" data-section="projects">Projetos</a></li>
-                    <li><a href="#contact" data-section="contact">Contato</a></li>
-                </ul>
-            </nav>
-        </aside>
+        </section>
 
-        <!-- Conteúdo Principal -->
-        <main class="main-content">
-
-            <section id="home" class="content-section active">
-                <h2 class="writing">Analytic | Java | SpringBoot | Angular</h2>
-
-                <section id="about" class="content-section"></section>
-                <h2>About Me</h2>
-                <p>
-                    Sou Engenheiro de Sustentação e Desenvolvimento Jr. com experiência em garantir a estabilidade, desempenho e evolução de sistemas de TI. Especializado em identificar e solucionar problemas técnicos, atuo ativamente na manutenção e melhoria contínua de aplicações. Tenho forte conhecimento em monitoramento de sistemas, gestão de incidentes e suporte técnico, sempre focado na otimização e escalabilidade dos serviços.
-                </p>
-                <p>
-                    Como Desenvolvedor Júnior, tenho experiência com Java, Spring Boot e Angular, com interesse em expandir minhas habilidades no desenvolvimento Full-stack. Trabalhei com tecnologias como Docker, Oracle, Hibernate, PostgreSQL e MySQL, e tenho grande interesse em aprimorar meu conhecimento, especialmente em Golang. Busco oportunidades para aprender e crescer como desenvolvedor, contribuindo para o sucesso das equipes e dos projetos em que estou envolvido
-                </p>
-
-                <h3>Experiência Profissional</h3>
-                <div class="experience">
-                    <h4>Engenheiro de Sustentação e Desenvolvimento JR</h4>
-                    <p><strong>CD2 Retail Tech | São Paulo, SP</strong> | Junho 2024</p>
-                    <p>Atuo na sustentação, análise e monitoramento das aplicações internas do grupo Assaí Atacadista, com foco em garantir o bom funcionamento e a performance das soluções desenvolvidas em Java e Angular. Trabalhando em um ambiente tecnológico robusto, utilizo Docker, Kubernetes e AWS para otimizar o deployment, a escalabilidade e a infraestrutura das aplicações, assegurando que elas atendam às necessidades de negócio de forma eficiente e segura. Além disso, estou sempre em busca de melhorias contínuas, colaborando com equipes multidisciplinares para implementar soluções que aprimorem a experiência dos usuários e a performance dos sistemas.</p>
-
-                    <h4>Engenheiro de Suporte e Desenvolvimento JR</h4>
-                    <p><strong>HQBEDS | São Paulo, SP</strong> | Abril 2024 – Maio 2024</p>
-                    <p>Atuei como Desenvolvedor de Suporte Júnior na HQBEDS, onde fui responsável por fornecer suporte técnico e desenvolvimento de soluções para o software de gestão hoteleira. Minhas principais atividades incluíam:
-                        Atendimento e resolução de dúvidas técnicas, oferecendo soluções eficientes para os clientes.
-                        Auxílio na configuração e personalização do software, implementando ajustes para atender às necessidades específicas dos usuários.
-                        Identificação, diagnóstico e resolução de problemas técnicos, garantindo a continuidade das operações e a satisfação dos clientes.</p>
-
-                    <h4>Analista de TI</h4>
-                    <p><strong>Escudo Real | Praia Grande, SP</strong> | Dezembro 2022 - Janeiro 2024</p>
-                    <p>Como especialista em Tecnologia da Informação, possuo expertise na manutenção de hardware e
-                        redes, proporcionando soluções eficientes para garantir o funcionamento otimizado de sistemas e
-                        infraestruturas tecnológicas. Minha abordagem inclui diagnóstico preciso, reparo ágil e
-                        implementação de melhorias.</p>
+        <section id="skills" class="content-section">
+            <h2>Competências Técnicas</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Linguagens</h3>
+                    <ul>
+                        <li><i class="fa-brands fa-java"></i> Java</li>
+                        <li><i class="fa-brands fa-js-square"></i> JavaScript / TypeScript</li>
+                        <li><i class="fa-brands fa-golang"></i> Go</li>
+                        <li><i class="fas fa-database"></i> SQL</li>
+                    </ul>
                 </div>
-            </section>
-            </main>
+                <div class="skill-category">
+                    <h3>Frameworks & Bibliotecas</h3>
+                    <ul>
+                        <li><i class="fas fa-leaf"></i> Spring Boot</li>
+                        <li><i class="fa-brands fa-angular"></i> Angular</li>
+                        <li><i class="fas fa-project-diagram"></i> Hibernate</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Bancos de Dados</h3>
+                    <ul>
+                        <li><i class="fas fa-database"></i> PostgreSQL</li>
+                        <li><i class="fas fa-database"></i> MySQL</li>
+                        <li><i class="fas fa-database"></i> Oracle</li>
+                        <li><i class="fas fa-database"></i> H2</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Ferramentas & Tecnologias</h3>
+                    <ul>
+                        <li><i class="fa-brands fa-docker"></i> Docker</li>
+                        <li><i class="fas fa-cubes"></i> Kubernetes</li>
+                        <li><i class="fa-brands fa-aws"></i> AWS</li>
+                        <li><i class="fa-brands fa-git-alt"></i> Git & GitHub</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-            <main class="main-content">
-                <section id="projects" class="content-section">
-                    <h2>Projetos</h2>
-                    <div class="table-container">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Nome do Projeto</th>
-                                    <th>Descrição</th>
-                                    <th>Categoria</th>
-                                    <th>Link do Projeto</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Loja WEB</td>
-                                    <td>Loja Web usando HTML, Golang e Postgres</td>
-                                    <td>FullStack</td>
-                                    <td>
-                                        <a href="https://github.com/GabrielDemesio/Loja-Feito-em-Go" target="_blank">
-                                            <i class="fa-brands fa-github fa-2x"></i>
-                                            <!-- Aumenta o tamanho com fa-2x, fa-3x, etc. -->
-                                        </a>
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td>Projeto SOC</td>
-                                    <td>CRUD feita em java com spring boot. Banco de dados usado H2.</td>
-                                    <td>CRUD Back-End e H2</td>
-                                    <td><a href="https://github.com/GabrielDemesio/CRUDJava" target="_blank"><i
-                                                class="fa-brands fa-github fa-2x"></i></a></td>
-                                </tr>
-                                <tr>
-
-                                </tr>
-                                <td>Projeto Banco</td>
-                                <td>PROJETO DE BANCO FEITO EM JAVA.</td>
-                                <td>Back-end Java e MYSQL</td>
-                                <td><a href="https://github.com/GabrielDemesio/ProjectBankApp" target="_blank"><i
-                                            class="fa-brands fa-github fa-2x"></i></a></td>
-                                </tr>
-
-                                </tr>
-                                <td>Projeto BookStore</td>
-                                <td>PROJETO BookStore Back end feita em java.</td>
-                                <td>Back-end Java e MYSQL E Angular</td>
-                                <td><a href="https://github.com/GabrielDemesio/bookstoreBackEnd" target="_blank"><i
-                                        class="fa-brands fa-github fa-2x"></i></a></td>
-                                </tr>
-
-                                </tr>
-                                <td>Projeto BookStore Front-End</td>
-                                <td>PROJETO BookStore Front-End feita em Angular.</td>
-                                <td>Front-End Angular</td>
-                                <td><a href="https://github.com/GabrielDemesio/bookstore-front" target="_blank"><i
-                                        class="fa-brands fa-github fa-2x"></i></a></td>
-                                </tr>
-                                <!-- Adicione mais linhas conforme necessário -->
-                            </tbody>
-                        </table>
+        <section id="projects" class="content-section">
+            <h2>Projetos</h2>
+            <div class="projects-container">
+                <div class="project-card">
+                    <h3>Loja Web em Go</h3>
+                    <p>Aplicação web full-stack para uma loja virtual, desenvolvida para aprofundamento em Golang. O back-end gerencia produtos e o front-end exibe o catálogo.</p>
+                    <div class="project-tags">
+                        <span>Go</span><span>PostgreSQL</span><span>HTML/CSS</span>
                     </div>
-                </section>
+                    <div class="project-links">
+                        <a href="https://github.com/GabrielDemesio/Loja-Feito-em-Go" target="_blank" title="Ver no GitHub"><i class="fa-brands fa-github fa-2x"></i></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>API de Gestão (Projeto SOC)</h3>
+                    <p>API RESTful para gerenciar exames de saúde de funcionários. A aplicação permite operações CRUD completas e foi construída com Java e Spring Boot.</p>
+                    <div class="project-tags">
+                        <span>Java</span><span>Spring Boot</span><span>H2</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/GabrielDemesio/CRUDJava" target="_blank" title="Ver no GitHub"><i class="fa-brands fa-github fa-2x"></i></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>BookStore API</h3>
+                    <p>Back-end de uma livraria online, desenvolvendo uma API para gerenciar o catálogo de livros, autores e pedidos, integrado com um banco de dados MySQL.</p>
+                    <div class="project-tags">
+                        <span>Java</span><span>Spring Boot</span><span>MySQL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/GabrielDemesio/bookstoreBackEnd" target="_blank" title="Ver no GitHub"><i class="fa-brands fa-github fa-2x"></i></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>BookStore Front-End</h3>
+                    <p>Interface de usuário para a livraria online, consumindo a BookStore API. O front-end permite aos usuários navegar, buscar e visualizar os livros disponíveis.</p>
+                    <div class="project-tags">
+                        <span>Angular</span><span>TypeScript</span><span>API Rest</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/GabrielDemesio/bookstore-front" target="_blank" title="Ver no GitHub"><i class="fa-brands fa-github fa-2x"></i></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Aplicação Bancária</h3>
+                    <p>Sistema de console que simula operações bancárias como saques e depósitos, focado em aplicar conceitos de Orientação a Objetos em Java.</p>
+                    <div class="project-tags">
+                        <span>Java</span><span>POO</span><span>MySQL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/GabrielDemesio/ProjectBankApp" target="_blank" title="Ver no GitHub"><i class="fa-brands fa-github fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                <section id="contact" class="content-section">
-                    <h2>Contact</h2>
-                    <p><i class="fa-solid fa-calendar-days"></i> 17/11/2003</p>
-                    <p><i class="fa-solid fa-location-dot"></i> São Paulo - SP</p>
-                    <p><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/5513991063764" target="_blank">+55
-                            13 99106-3764</a></p>
-                    <p><i class="fa-solid fa-envelope"></i> <a
-                            href="mailto:gabrieldemesio01@gmail.com">gabrieldemesio01@gmail.com</a></p>
-                    <p><i class="fa-brands fa-linkedin"></i> <a
-                            href="https://www.linkedin.com/in/gabriel-demesio-2b0517222/" target="_blank">LinkedIn</a>
-                    </p>
-                    <p><i class="fa-brands fa-github"></i> <a href="https://github.com/GabrielDemesio"
-                            target="_blank">GitHub</a></p>
-                </section>
+        <section id="contact" class="content-section">
+            <h2>Contato</h2>
+            <p><i class="fa-solid fa-calendar-days"></i> 17/11/2003</p>
+            <p><i class="fa-solid fa-location-dot"></i> São Paulo - SP</p>
+            <p><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/5513991063764" target="_blank">+55 13 99106-3764</a></p>
+            <p><i class="fa-solid fa-envelope"></i> <a href="mailto:gabrieldemesio01@gmail.com">gabrieldemesio01@gmail.com</a></p>
+            <p><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/gabriel-demesio-2b0517222/" target="_blank">linkedin.com/in/gabriel-demesio</a></p>
+            <p><i class="fa-brands fa-github"></i> <a href="https://github.com/GabrielDemesio" target="_blank">github.com/GabrielDemesio</a></p>
+        </section>
 
-            </main>
-    </div>
+    </main>
+</div>
 
-    <script src="js/script.js"></script>
+<script src="js/script.js"></script>
 </body>
 
 </html>
